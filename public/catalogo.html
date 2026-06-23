@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo institucional de BiblioPerú con búsqueda de libros, filtros y seguimiento de préstamos.">
+  <title>Catálogo - BiblioPerú</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/hamBurger.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="container">
+  <div class="box header">
+    <a class="button contrast" href="contrast-views/catalogo-contrast.html"><i class="fa-solid fa-adjust"></i> <span>Contraste</span></a>
+    <h2>BIBLIOPERÚ</h2>
+    
+    <!-- Checkbox Hack para menú hamburguesa -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    
+    <!-- Navegación móvil -->
+    <nav class="nav-mobile">
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="prestamos.html">Mis préstamos</a>
+      <a href="historial.html">Historial</a>
+      <a href="perfil.html">Perfil</a>
+      <a href="panel.html">Panel</a>
+      <a href="login.html">Iniciar sesión</a>
+    </nav>
+    
+    <!-- Overlay para cerrar menú -->
+    <div class="menu-overlay"></div>
+    
+    <!-- Navegación desktop -->
+    <div class="nav nav-desktop">
+      <a class="button" href="index.html">Inicio</a>
+      <a class="button" href="catalogo.html">Catálogo</a>
+      <a class="button" href="prestamos.html">Mis préstamos</a>
+      <a class="button" href="historial.html">Historial</a>
+      <a class="button" href="perfil.html">Perfil</a>
+      <a class="button" href="panel.html">Panel</a>
+      <a class="button" href="login.html">Iniciar sesión</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <h3>CATÁLOGO DE LIBROS</h3>
+    <div class="search-row">
+      <label>
+        <input type="search" placeholder="Buscar por título, autor o categoría" />
+      </label>
+      <button class="button primary">Buscar</button>
+    </div>
+    <div class="actions">
+      <a class="button" href="#">Categoría</a>
+      <a class="button" href="#">Disponibilidad</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <h3>RESULTADOS</h3>
+    <div class="grid">
+      <div class="card">
+        <div class="image"><img src="../assets/img/LaCiudad.png" alt="La ciudad y los perros"></div>
+        <p><strong>La ciudad y los perros</strong></p>
+        <p>Mario Vargas Llosa</p>
+        <p>Disponible</p>
+        <a class="button primary" href="solicitarprestamo.html">Solicitar préstamo</a>
+      </div>
+      <div class="card">
+        <div class="image"><img src="../assets/img/ElArbol.png" alt="El árbol de la ciencia"></div>
+        <p><strong>El árbol de la ciencia</strong></p>
+        <p>Pío Baroja</p>
+        <p><strong>Lo tiene usted</strong></p>
+        <a class="button" href="detallelibro.html">Ver detalle</a>
+      </div>
+      <div class="card">
+        <div class="image"><img src="../assets/img/LaSombra.png" alt="La sombra del viento"></div>
+        <p><strong>La sombra del viento</strong></p>
+        <p>Carlos Ruiz Zafón</p>
+        <p>Disponible</p>
+        <a class="button primary" href="solicitarprestamo.html">Solicitar préstamo</a>
+      </div>
+      <div class="card">
+        <div class="image"><img src="../assets/img/CienAnios.png" alt="Cien años de soledad"></div>
+        <p><strong>Cien años de soledad</strong></p>
+        <p>Gabriel García Márquez</p>
+        <p>Disponible</p>
+        <a class="button primary" href="solicitarprestamo.html">Solicitar préstamo</a>
+      </div>
+      <div class="card">
+        <div class="image"><img src="../assets/img/Rayuela.png" alt="Rayuela"></div>
+        <p><strong>Rayuela</strong></p>
+        <p>Julio Cortázar</p>
+        <p>Disponible</p>
+        <a class="button primary" href="solicitarprestamo.html">Solicitar préstamo</a>
+      </div>
+      <div class="card">
+        <div class="image"><img src="../assets/img/ElAmor.png" alt="El amor en los tiempos del cólera"></div>
+        <p><strong>El amor en los tiempos del cólera</strong></p>
+        <p>Gabriel García Márquez</p>
+        <p>Disponible</p>
+        <a class="button primary" href="solicitarprestamo.html">Solicitar préstamo</a>
+      </div>
+      <div class="card">
+        <div class="image"><img src="../assets/img/ElLaberinto.png" alt="El laberinto de la soledad"></div>
+        <p><strong>El laberinto de la soledad</strong></p>
+        <p>Octavio Paz</p>
+        <p>Disponible</p>
+        <a class="button primary" href="solicitarprestamo.html">Solicitar préstamo</a>
+      </div>
+    </div>
+    <div class="pagination">
+      <button class="button">Anterior</button>
+      <span>Página 1 de 10</span>
+      <button class="button">Siguiente</button>
+    </div>
+  </div>
+
+  <footer class="box footer">
+    <div class="footer-links">
+      <a class="button" href="#">Información</a>
+      <a class="button" href="#">Ayuda</a>
+      <a class="button" href="#">Accesibilidad</a>
+    </div>
+    <p>&copy; 2026 BiblioPerú. Todos los derechos reservados.</p>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BiblioPerú - Sistema de gestión bibliotecaria institucional con catálogo de libros y préstamos.">
+  <title>Inicio - BiblioPerú</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/hamBurger.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="container">
+  <div class="box header">
+    <a class="button contrast" href="contrast-views/index-contrast.html"><i class="fa-solid fa-adjust"></i> <span>Contraste</span></a>
+    <h2>BIBLIOPERÚ</h2>
+    
+    <!-- Checkbox Hack para menú hamburguesa -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    
+    <!-- Navegación móvil -->
+    <nav class="nav-mobile">
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="prestamos.html">Mis préstamos</a>
+      <a href="historial.html">Historial</a>
+      <a href="perfil.html">Perfil</a>
+      <a href="panel.html">Panel</a>
+      <a href="login.html">Iniciar sesión</a>
+    </nav>
+    
+    <!-- Overlay para cerrar menú -->
+    <div class="menu-overlay"></div>
+    
+    <!-- Navegación desktop -->
+    <div class="nav nav-desktop">
+      <a class="button" href="index.html">Inicio</a>
+      <a class="button" href="catalogo.html">Catálogo</a>
+      <a class="button" href="prestamos.html">Mis préstamos</a>
+      <a class="button" href="historial.html">Historial</a>
+      <a class="button" href="perfil.html">Perfil</a>
+      <a class="button" href="panel.html">Panel</a>
+      <a class="button" href="login.html">Iniciar sesión</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <h3>BIENVENIDO A BIBLIOPERÚ</h3>
+    <p>BiblioPerú es tu sistema de gestión bibliotecaria institucional. Aquí puedes explorar nuestro catálogo de más de 1,200 libros, gestionar tus préstamos activos, revisar tu historial de lectura y descubrir nuevas obras de autores peruanos e internacionales. Nuestra plataforma está diseñada para ser accesible y fácil de usar.</p>
+  </div>
+
+  <div class="box">
+    <h3>ACCESOS RÁPIDOS</h3>
+    <div class="grid">
+      <div class="card">
+        <div class="quick-access-icon"><i class="fa-solid fa-book"></i></div>
+        <p><strong>Catálogo</strong></p>
+        <p>Explora nuestra colección de libros</p>
+        <a class="button primary" href="catalogo.html">Ir al catálogo</a>
+      </div>
+      <div class="card">
+        <div class="quick-access-icon"><i class="fa-solid fa-warehouse"></i></div>
+        <p><strong>Mis préstamos</strong></p>
+        <p>Gestiona tus libros prestados</p>
+        <a class="button" href="prestamos.html">Ver préstamos</a>
+      </div>
+      <div class="card">
+        <div class="quick-access-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+        <p><strong>Historial</strong></p>
+        <p>Revisa tu historial de lectura</p>
+        <a class="button" href="historial.html">Ver historial</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="box footer">
+    <div class="footer-links">
+      <a class="button" href="#">Información</a>
+      <a class="button" href="#">Ayuda</a>
+      <a class="button" href="#">Accesibilidad</a>
+    </div>
+    <p>&copy; 2026 BiblioPerú. Todos los derechos reservados.</p>
+  </footer>
+</div>
+</body>
+</html>

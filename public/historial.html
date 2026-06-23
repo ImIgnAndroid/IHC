@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Historial de préstamos y devoluciones del usuario en BiblioPerú.">
+  <title>Historial - BiblioPerú</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/hamBurger.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="container">
+  <div class="box header">
+    <a class="button contrast" href="contrast-views/historial-contrast.html"><i class="fa-solid fa-adjust"></i> <span>Contraste</span></a>
+    <h2>BIBLIOPERÚ</h2>
+    
+    <!-- Checkbox Hack para menú hamburguesa -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    
+    <!-- Navegación móvil -->
+    <nav class="nav-mobile">
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="prestamos.html">Mis préstamos</a>
+      <a href="historial.html">Historial</a>
+      <a href="perfil.html">Perfil</a>
+      <a href="panel.html">Panel</a>
+      <a href="login.html">Iniciar sesión</a>
+    </nav>
+    
+    <!-- Overlay para cerrar menú -->
+    <div class="menu-overlay"></div>
+    
+    <!-- Navegación desktop -->
+    <div class="nav nav-desktop">
+      <a class="button" href="index.html">Inicio</a>
+      <a class="button" href="catalogo.html">Catálogo</a>
+      <a class="button" href="prestamos.html">Mis préstamos</a>
+      <a class="button" href="historial.html">Historial</a>
+      <a class="button" href="perfil.html">Perfil</a>
+      <a class="button" href="panel.html">Panel</a>
+      <a class="button" href="login.html">Iniciar sesión</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <h3>HISTORIAL DE LECTURA</h3>
+    <div class="loan-list">
+      <div class="item loan-item">
+        <div class="loan-item-image">
+          <div class="image"><img src="../assets/img/ElAmor.png" alt="El amor en los tiempos del cólera"></div>
+        </div>
+        <div class="loan-item-content">
+          <div class="loan-item-header">
+            <p>El amor en los tiempos del cólera</p>
+            <span class="status status-returned">Devuelto</span>
+          </div>
+          <div class="loan-item-details">
+            <p><i class="fa-solid fa-calendar"></i> Préstamo: 10/03/2026</p>
+            <p><i class="fa-solid fa-calendar-check"></i> Devolución: 20/03/2026</p>
+          </div>
+        </div>
+      </div>
+      <div class="item loan-item">
+        <div class="loan-item-image">
+          <div class="image"><img src="../assets/img/CienAnios.png" alt="Cien años de soledad"></div>
+        </div>
+        <div class="loan-item-content">
+          <div class="loan-item-header">
+            <p>Cien años de soledad</p>
+            <span class="status status-returned">Devuelto</span>
+          </div>
+          <div class="loan-item-details">
+            <p><i class="fa-solid fa-calendar"></i> Préstamo: 12/04/2026</p>
+            <p><i class="fa-solid fa-calendar-check"></i> Devolución: 22/04/2026</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="box footer">
+    <div class="footer-links">
+      <a class="button" href="#">Información</a>
+      <a class="button" href="#">Ayuda</a>
+      <a class="button" href="#">Accesibilidad</a>
+    </div>
+    <p>&copy; 2026 BiblioPerú. Todos los derechos reservados.</p>
+  </footer>
+</div>
+</body>
+</html>

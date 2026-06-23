@@ -1,0 +1,10 @@
+Listado de libros y portadas:
+1. La ciudad y los perros - Mario Vargas Llosa - LaCiudad.png
+2. El árbol de la ciencia - Pío Baroja - ElArbol.png
+3. La sombra del viento - Carlos Ruiz Zafón - LaSombra.png
+4. Cien años de soledad - Gabriel García Márquez - CienAnios.png
+5. Rayuela - Julio Cortázar - Rayuela.png
+6. El amor en los tiempos del cólera - Gabriel García Márquez - ElAmor.png
+7. El laberinto de la soledad - Octavio Paz - ElLaberinto.png
+
+Usa la imagen correspondiente en el catálogo, en la vista de detalle, en la solicitud de préstamo y en el historial según el libro mostrado.
