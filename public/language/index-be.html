@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BiblioPerú - інстытуцыйная сістэма кіравання бібліятэкай з каталогам кніг і выдач.">
+    <title>Галоўная - BiblioPerú</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/hamBurger.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="container">
+    <div class="box header">
+        <a class="button contrast" href="../contrast-views/index-contrast.html"><i class="fa-solid fa-adjust"></i> <span>Кантраст</span></a>
+        <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-toggle" type="button" id="langToggle" aria-expanded="false">
+                <i class="fa-solid fa-globe"></i>
+                <span>BE</span>
+            </button>
+            <div class="lang-menu" id="langMenu">
+                <a class="lang-option" href="../index.html">Es</a>
+                <a class="lang-option" href="index-en.html">En</a>
+                <a class="lang-option" href="index-ru.html">Ru</a>
+                <a class="lang-option" href="index-zh.html">Zh</a>
+                <a class="lang-option" href="index-it.html">It</a>
+                <a class="lang-option active" href="index-be.html">Be</a>
+            </div>
+        </div>
+        <h2>BIBLIOPERÚ</h2>
+
+        <!-- Чэкбокс для гамбургер-мэню -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Мабільная навігацыя -->
+        <nav class="nav-mobile">
+            <a href="../index.html">Галоўная</a>
+            <a href="../catalogo.html">Каталог</a>
+            <a href="../prestamos.html">Мае пазыкі</a>
+            <a href="../historial.html">Гісторыя</a>
+            <a href="../perfil.html">Профіль</a>
+            <a href="../login.html">Увайсці</a>
+        </nav>
+
+        <!-- Оверлей для закрыцця мэню -->
+        <div class="menu-overlay"></div>
+
+        <!-- Дэсктопная навігацыя -->
+        <div class="nav nav-desktop">
+            <a class="button" href="../index.html">Галоўная</a>
+            <a class="button" href="../catalogo.html">Каталог</a>
+            <a class="button" href="../prestamos.html">Мае пазыкі</a>
+            <a class="button" href="../historial.html">Гісторыя</a>
+            <a class="button" href="../perfil.html">Профіль</a>
+            <a class="button" href="../login.html">Увайсці</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <h3 id="welcomeTitle">ВІТАЕМ Ў BIBLIOPERÚ</h3>
+        <p id="welcomeText">BiblioPerú — гэта ваша інстытуцыйная сістэма кіравання бібліятэкай. Тут вы можаце даследаваць наш каталог з больш чым 1 200 кніг, кіраваць актыўнымі выдаткамі, праглядаць гісторыю чытання і адкрываць для сябе новыя творы перуанскіх і міжнародных аўтараў. Наша платформа распрацавана так, каб быць даступнай і простай у выкарыстанні.</p>
+    </div>
+
+    <div class="box">
+        <h3>ХУТКІ ДОСТУП</h3>
+        <div class="grid">
+            <div class="card">
+                <div class="quick-access-icon"><i class="fa-solid fa-book"></i></div>
+                <p><strong>Каталог</strong></p>
+                <p>Даследуйце нашу калекцыю кніг</p>
+                <a class="button primary" href="../catalogo.html">Перайсці ў каталог</a>
+            </div>
+            <div class="card">
+                <div class="quick-access-icon"><i class="fa-solid fa-warehouse"></i></div>
+                <p><strong>Мае пазыкі</strong></p>
+                <p>Кіруйце ўзятымі кнігамі</p>
+                <a class="button" href="../prestamos.html">Паглядзець пазыкі</a>
+            </div>
+            <div class="card">
+                <div class="quick-access-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                <p><strong>Гісторыя</strong></p>
+                <p>Праверце гісторыю чытання</p>
+                <a class="button" href="../historial.html">Паглядзець гісторыю</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="box footer">
+        <div class="footer-links">
+            <a class="button" href="#">Інфармацыя</a>
+            <a class="button" href="#">Дапамога</a>
+            <a class="button" href="#">Даступнасць</a>
+        </div>
+        <p>&copy; 2026 BiblioPerú. Усе правы ахоўваюцца.</p>
+    </footer>
+</div>
+<script src="../../assets/js/scripts.js"></script>
+</body>
+</html>

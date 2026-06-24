@@ -1,86 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Panel de control administrativo para supervisar préstamos y usuarios.">
-  <title>Panel Admin - BiblioPerú</title>
-  <link rel="stylesheet" href="../assets/css/styles.css">
-  <link rel="stylesheet" href="../assets/css/hamBurger.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Panel de Control - BiblioPerú">
+    <title>Panel Admin - BiblioPerú</title>
+    <link rel="stylesheet" href="../assets/css/styles-admin.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="admin-mode">
-<div class="container">
-  <div class="box header">
-    <a class="button contrast" href="../public/testcontraste.html"><i class="fa-solid fa-adjust"></i> <span>Contraste</span></a>
-    <h2>BIBLIOPERÚ</h2>
-    
-    <!-- Checkbox Hack para menú hamburguesa -->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    
-    <!-- Navegación móvil -->
-    <nav class="nav-mobile">
-      <a href="index.html">Inicio</a>
-      <a href="catalogo.html">Catálogo</a>
-      <a href="prestamos.html">Mis préstamos</a>
-      <a href="historial.html">Historial</a>
-      <a href="perfil.html">Perfil</a>
-      <a href="panel.html">Panel</a>
-      <a href="login.html">Iniciar sesión</a>
-    </nav>
-    
-    <!-- Overlay para cerrar menú -->
-    <div class="menu-overlay"></div>
-    
-    <!-- Navegación desktop -->
-    <div class="nav nav-desktop">
-      <a class="button" href="index.html">Inicio</a>
-      <a class="button" href="catalogo.html">Catálogo</a>
-      <a class="button" href="prestamos.html">Mis préstamos</a>
-      <a class="button" href="historial.html">Historial</a>
-      <a class="button" href="perfil.html">Perfil</a>
-      <a class="button" href="panel.html">Panel</a>
-      <a class="button" href="login.html">Iniciar sesión</a>
-    </div>
-  </div>
+<body>
+<div class="admin-layout">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+        <div class="admin-sidebar-header">
+            <h2>BIBLIOPERÚ</h2>
+            <p class="subtitle">Panel Administrativo</p>
+        </div>
+        
+        <nav class="admin-nav">
+            <a href="panel-admin.html" class="admin-nav-item active">
+                <i class="fa-solid fa-gauge"></i>
+                <span>Panel Admin</span>
+            </a>
+            <a href="usuarios.html" class="admin-nav-item">
+                <i class="fa-solid fa-users"></i>
+                <span>Usuarios</span>
+            </a>
+            <a href="info-libros.html" class="admin-nav-item">
+                <i class="fa-solid fa-book"></i>
+                <span>Info Libros</span>
+            </a>
+        </nav>
+        
+        <div class="admin-sidebar-footer">
+            <a href="login-admin.html" class="button secondary">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Cerrar Sesión</span>
+            </a>
+        </div>
+    </aside>
 
-  <div class="box">
-    <h3>PANEL DE CONTROL</h3>
-    <div class="dashboard-grid">
-      <div class="metric-card">
-        <p><strong>Total préstamos</strong></p>
-        <p>152</p>
-      </div>
-      <div class="metric-card">
-        <p><strong>Libros disponibles</strong></p>
-        <p>1,240</p>
-      </div>
-      <div class="metric-card">
-        <p><strong>Usuarios activos</strong></p>
-        <p>312</p>
-      </div>
-    </div>
-  </div>
+    <!-- Main Content -->
+    <main class="admin-main">
+        <div class="admin-header">
+            <h1>Panel de Control</h1>
+            <div class="user-info">
+                <div class="avatar">
+                    <i class="fa-solid fa-user-shield"></i>
+                </div>
+                <div class="details">
+                    <p class="name">Administrador</p>
+                    <p class="role">Super Admin</p>
+                </div>
+            </div>
+        </div>
 
-  <div class="box">
-    <p>Área de reportes y gráficos disponible para seguimiento.</p>
-  </div>
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="icon">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                <div class="value">152</div>
+                <div class="label">Total Préstamos</div>
+            </div>
+            <div class="metric-card">
+                <div class="icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="value">1,240</div>
+                <div class="label">Libros Disponibles</div>
+            </div>
+            <div class="metric-card">
+                <div class="icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="value">312</div>
+                <div class="label">Usuarios Activos</div>
+            </div>
+            <div class="metric-card">
+                <div class="icon">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="value">5</div>
+                <div class="label">Préstamos por Vencer</div>
+            </div>
+        </div>
 
-  <footer class="box footer">
-    <div class="footer-links">
-      <a class="button" href="#">Información</a>
-      <a class="button" href="#">Ayuda</a>
-      <a class="button" href="#">Accesibilidad</a>
-    </div>
-    <p>&copy; 2026 BiblioPerú. Todos los derechos reservados.</p>
-  </footer>
+        <div class="admin-box">
+            <h3>Estado Operativo</h3>
+            <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 280px; padding: 20px; background: #F5E6D3; border-radius: 8px; border: 1px solid #D7CCC8;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                        <i class="fa-solid fa-chart-line" style="color: #D84315; font-size: 1.5rem;"></i>
+                        <h4 style="margin: 0; color: #3E2723; font-family: 'Oswald', sans-serif;">Sistema</h4>
+                    </div>
+                    <p style="margin: 0; color: #5D4037;">El sistema funciona correctamente. No se han detectado alertas críticas en la última hora.</p>
+                </div>
+                <div style="flex: 1; min-width: 280px; padding: 20px; background: #F5E6D3; border-radius: 8px; border: 1px solid #D7CCC8;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                        <i class="fa-solid fa-bell" style="color: #D84315; font-size: 1.5rem;"></i>
+                        <h4 style="margin: 0; color: #3E2723; font-family: 'Oswald', sans-serif;">Alertas Recientes</h4>
+                    </div>
+                    <ul style="margin: 0; padding-left: 20px; color: #5D4037;">
+                        <li>5 préstamos próximos a vencerse</li>
+                        <li>2 solicitudes pendientes de aprobación</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="admin-box">
+            <h3>Préstamos Recientes</h3>
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Usuario</th>
+                        <th>Libro</th>
+                        <th>Fecha Préstamo</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>P-152</td>
+                        <td>Juan Pérez</td>
+                        <td>Los Heraldos Negros</td>
+                        <td>2024-02-01</td>
+                        <td><span class="status-badge status-active">Activo</span></td>
+                    </tr>
+                    <tr>
+                        <td>P-151</td>
+                        <td>María López</td>
+                        <td>Trilce</td>
+                        <td>2024-01-30</td>
+                        <td><span class="status-badge status-active">Activo</span></td>
+                    </tr>
+                    <tr>
+                        <td>P-150</td>
+                        <td>Carlos Mendoza</td>
+                        <td>La Ciudad y los Perros</td>
+                        <td>2024-01-28</td>
+                        <td><span class="status-badge status-pending">Por Vencer</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="display: flex; gap: 12px; justify-content: flex-end; margin-top: 24px;">
+            <a href="usuarios.html" class="button primary">
+                <i class="fa-solid fa-users"></i>
+                <span>Gestionar Usuarios</span>
+            </a>
+            <a href="info-libros.html" class="button primary">
+                <i class="fa-solid fa-book"></i>
+                <span>Gestionar Libros</span>
+            </a>
+        </div>
+    </main>
 </div>
+<script src="../assets/js/scripts-admin.js"></script>
 </body>
 </html>
