@@ -133,6 +133,63 @@ a:focus {
   font-size: 1rem;
 }
 
+.lang-switcher {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  z-index: 3;
+}
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid #5D4037;
+  border-radius: 999px;
+  background: #F5E6D3;
+  color: #3E2723;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(93, 64, 55, 0.15);
+}
+
+.lang-menu {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+  background: #ffffff;
+  border: 1px solid #D7CCC8;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(93, 64, 55, 0.16);
+  min-width: 100px;
+}
+
+.lang-switcher.open .lang-menu {
+  display: flex;
+}
+
+.lang-option {
+  border: none;
+  background: transparent;
+  text-align: left;
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: #3E2723;
+  cursor: pointer;
+}
+
+.lang-option:hover,
+.lang-option.active {
+  background: #F5E6D3;
+  color: #BF360C;
+}
+
 @media (max-width: 768px) {
   .contrast {
     padding: 8px 12px;

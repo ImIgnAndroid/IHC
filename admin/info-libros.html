@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información de Libros - BiblioPerú">
+    <title>Info Libros - BiblioPerú Admin</title>
+    <link rel="stylesheet" href="../assets/css/styles-admin.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="admin-layout">
+    <aside class="admin-sidebar">
+        <div class="admin-sidebar-header">
+            <h2>BIBLIOPERÚ</h2>
+            <p class="subtitle">Panel Administrativo</p>
+        </div>
+
+        <nav class="admin-nav">
+            <a href="panel-admin.html" class="admin-nav-item">
+                <i class="fa-solid fa-gauge"></i>
+                <span>Panel Admin</span>
+            </a>
+            <a href="usuarios.html" class="admin-nav-item">
+                <i class="fa-solid fa-users"></i>
+                <span>Usuarios</span>
+            </a>
+            <a href="info-libros.html" class="admin-nav-item active">
+                <i class="fa-solid fa-book"></i>
+                <span>Info Libros</span>
+            </a>
+        </nav>
+
+        <div class="admin-sidebar-footer">
+            <a href="login-admin.html" class="button secondary logout-link">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Cerrar Sesión</span>
+            </a>
+        </div>
+    </aside>
+
+    <main class="admin-main">
+        <div class="admin-header">
+            <h1>Gestión de Libros</h1>
+            <div class="user-info">
+                <div class="avatar">
+                    <i class="fa-solid fa-user-shield"></i>
+                </div>
+                <div class="details">
+                    <p class="name">Administrador</p>
+                    <p class="role">Super Admin</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="admin-box">
+            <p class="admin-page-tip">Administra el catálogo con datos persistidos en el navegador para actualizar disponibilidad, recomendaciones y orientación del libro.</p>
+            <div class="admin-search">
+                <input type="text" placeholder="Buscar por título, autor o ISBN..." id="searchBooks">
+                <button class="button primary" type="button">
+                    <i class="fa-solid fa-search"></i>
+                    <span>Buscar</span>
+                </button>
+                <a class="button primary" href="detalle-libro-adm.html">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Nuevo Libro</span>
+                </a>
+            </div>
+
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>ISBN</th>
+                        <th>Categoría</th>
+                        <th>Stock</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="booksTableBody"></tbody>
+            </table>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="icon">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                <div class="value" id="booksTotalCount">0</div>
+                <div class="label">Total Libros</div>
+            </div>
+            <div class="metric-card">
+                <div class="icon">
+                    <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="value" id="booksAvailableCount">0</div>
+                <div class="label">Disponibles</div>
+            </div>
+            <div class="metric-card">
+                <div class="icon">
+                    <i class="fa-solid fa-times-circle"></i>
+                </div>
+                <div class="value" id="booksOutCount">0</div>
+                <div class="label">Agotados</div>
+            </div>
+            <div class="metric-card">
+                <div class="icon">
+                    <i class="fa-solid fa-hand-holding-hand"></i>
+                </div>
+                <div class="value" id="booksLoanCount">0</div>
+                <div class="label">En Préstamo</div>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="../assets/js/scripts-admin.js"></script>
+</body>
+</html>

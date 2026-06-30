@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -15,6 +15,20 @@
 <div class="container">
   <div class="box header">
     <a class="button contrast" href="contrast-views/index-contrast.html"><i class="fa-solid fa-adjust"></i> <span>Contraste</span></a>
+    <div class="lang-switcher" id="langSwitcher">
+      <button class="lang-toggle" type="button" id="langToggle" aria-expanded="false">
+        <i class="fa-solid fa-globe"></i>
+        <span>ES</span>
+      </button>
+      <div class="lang-menu" id="langMenu">
+        <a class="lang-option active" href="index.html">Es</a>
+        <a class="lang-option" href="language/index-en.html">En</a>
+        <a class="lang-option" href="language/index-ru.html">Ru</a>
+        <a class="lang-option" href="language/index-zh.html">Zh</a>
+        <a class="lang-option" href="language/index-it.html">It</a>
+        <a class="lang-option" href="language/index-be.html">Be</a>
+      </div>
+    </div>
     <h2>BIBLIOPERÚ</h2>
     
     <!-- Checkbox Hack para menú hamburguesa -->
@@ -32,7 +46,6 @@
       <a href="prestamos.html">Mis préstamos</a>
       <a href="historial.html">Historial</a>
       <a href="perfil.html">Perfil</a>
-      <a href="panel.html">Panel</a>
       <a href="login.html">Iniciar sesión</a>
     </nav>
     
@@ -46,14 +59,13 @@
       <a class="button" href="prestamos.html">Mis préstamos</a>
       <a class="button" href="historial.html">Historial</a>
       <a class="button" href="perfil.html">Perfil</a>
-      <a class="button" href="panel.html">Panel</a>
       <a class="button" href="login.html">Iniciar sesión</a>
     </div>
   </div>
 
   <div class="box">
-    <h3>BIENVENIDO A BIBLIOPERÚ</h3>
-    <p>BiblioPerú es tu sistema de gestión bibliotecaria institucional. Aquí puedes explorar nuestro catálogo de más de 1,200 libros, gestionar tus préstamos activos, revisar tu historial de lectura y descubrir nuevas obras de autores peruanos e internacionales. Nuestra plataforma está diseñada para ser accesible y fácil de usar.</p>
+    <h3 id="welcomeTitle">BIENVENIDO A BIBLIOPERÚ</h3>
+    <p id="welcomeText">BiblioPerú es tu sistema de gestión bibliotecaria institucional. Aquí puedes explorar nuestro catálogo de más de 1,200 libros, gestionar tus préstamos activos, revisar tu historial de lectura y descubrir nuevas obras de autores peruanos e internacionales. Nuestra plataforma está diseñada para ser accesible y fácil de usar.</p>
   </div>
 
   <div class="box">
@@ -89,5 +101,6 @@
     <p>&copy; 2026 BiblioPerú. Todos los derechos reservados.</p>
   </footer>
 </div>
+<script src="../assets/js/scripts.js"></script>
 </body>
 </html>

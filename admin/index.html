@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Panel de Administración - BiblioPerú">
+    <title>Panel Admin - BiblioPerú</title>
+    <link rel="stylesheet" href="../assets/css/styles-admin.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="admin-layout">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+        <div class="admin-sidebar-header">
+            <h2>BIBLIOPERÚ</h2>
+            <p class="subtitle">Panel Administrativo</p>
+        </div>
+        
+        <nav class="admin-nav">
+            <a href="panel-admin.html" class="admin-nav-item">
+                <i class="fa-solid fa-gauge"></i>
+                <span>Panel Admin</span>
+            </a>
+            <a href="usuarios.html" class="admin-nav-item">
+                <i class="fa-solid fa-users"></i>
+                <span>Usuarios</span>
+            </a>
+            <a href="detalle-usuario.html" class="admin-nav-item">
+                <i class="fa-solid fa-user-circle"></i>
+                <span>Detalle Usuarios</span>
+            </a>
+            <a href="info-libros.html" class="admin-nav-item">
+                <i class="fa-solid fa-book"></i>
+                <span>Info Libros</span>
+            </a>
+        </nav>
+        
+        <div class="admin-sidebar-footer">
+            <a href="login-admin.html" class="button secondary">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Cerrar sesión</span>
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="admin-main">
+        <div class="admin-header">
+            <h1>Panel de Administración</h1>
+            <div class="user-info">
+                <div class="avatar">
+                    <i class="fa-solid fa-user-shield"></i>
+                </div>
+                <div class="details">
+                    <p class="name">Administrador</p>
+                    <p class="role">Sr. Moisés A. Capillo H.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="admin-box">
+            <h3>Bienvenido al Panel Administrativo</h3>
+            <p>Seleccione una opción del menú lateral para comenzar a gestionar el sistema bibliotecario.</p>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="value">156</div>
+                <div class="label">Usuarios Activos</div>
+            </div>
+            <div class="metric-card">
+                <div class="icon">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                <div class="value">1,247</div>
+                <div class="label">Libros en Catálogo</div>
+            </div>
+            <div class="metric-card">
+                <div class="icon">
+                    <i class="fa-solid fa-hand-holding-hand"></i>
+                </div>
+                <div class="value">89</div>
+                <div class="label">Préstamos Activos</div>
+            </div>
+            <div class="metric-card">
+                <div class="icon">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </div>
+                <div class="value">342</div>
+                <div class="label">Préstamos Completados</div>
+            </div>
+        </div>
+
+        <div class="admin-box">
+            <h3>Accesos Rápidos</h3>
+            <div class="metrics-grid">
+                <a href="usuarios.html" class="metric-card" style="text-decoration: none;">
+                    <div class="icon">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+                    <div class="value" style="font-size: 1.5rem;">Gestionar Usuarios</div>
+                    <div class="label">Ver todos</div>
+                </a>
+                <a href="info-libros.html" class="metric-card" style="text-decoration: none;">
+                    <div class="icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="value" style="font-size: 1.5rem;">Catálogo</div>
+                    <div class="label">Gestionar libros</div>
+                </a>
+                <a href="panel-admin.html" class="metric-card" style="text-decoration: none;">
+                    <div class="icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div class="value" style="font-size: 1.5rem;">Estadísticas</div>
+                    <div class="label">Ver métricas</div>
+                </a>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="../assets/js/scripts-admin.js"></script>
+</body>
+</html>
